@@ -14,7 +14,7 @@
     box-shadow: none !important;
 }
 
-.transaction-form input : focus{
+.transaction-form input:focus{
     border: 1px solid gray;
     border-bottom: 1px solid gray !important;
     box-shadow: none !important;
@@ -25,7 +25,7 @@
     border: 1px solid gray !important;
 }
 
-.ant-select-selector: focus{
+.ant-select-selector:focus{
     box-shadow: none !important;
     outline : none !important;
 }
