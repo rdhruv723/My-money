@@ -1,4 +1,4 @@
-# mymoney72
+# My-money
 
 My-money is an expense tracker app where you can keep track of all your income and expense. 
 This is the login page, but since you are a new user so let’s register with a new account. 
