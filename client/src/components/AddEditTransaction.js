@@ -16,7 +16,7 @@ function AddEditTransaction({
             const user = JSON.parse(localStorage.getItem('mymoney-user'))
             setLoading(true);
             if (selectedItemForEdit) {
-                await axios.post('http://localhost:8000/api/transactions/edit-transaction',
+                await axios.post('https://mymoney-xyay.onrender.com/api/transactions/edit-transaction',
                     { 
                         payload : {
                             ...values, 
@@ -28,7 +28,7 @@ function AddEditTransaction({
                 message.success('Transaction Updated Successfully')
             }
             else {
-                await axios.post('http://localhost:8000/api/transactions/add-transaction',
+                await axios.post('https://mymoney-xyay.onrender.com/api/transactions/add-transaction',
                     { ...values, userid: user._id, })
                 getTransactions()
                 message.success('Transaction Added Successfully')

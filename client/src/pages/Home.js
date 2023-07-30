@@ -27,7 +27,7 @@ function Home() {
     try {
       const user = JSON.parse(localStorage.getItem('mymoney-user'))
       setLoading(true)
-      const response = await axios.post('http://localhost:8000/api/transactions/get-all-transactions',
+      const response = await axios.post('https://mymoney-xyay.onrender.com/api/transactions/get-all-transactions',
         {
           userid: user._id,
           frequency, ...(frequency === 'custom' && { selectedRange }),
@@ -45,7 +45,7 @@ function Home() {
   const deleteTransactions = async (record) => {
     try {
       setLoading(true)
-      await axios.post('http://localhost:8000/api/transactions/delete-transaction',
+      await axios.post('https://mymoney-xyay.onrender.com/api/transactions/delete-transaction',
         {
           transactionId : record._id
         }

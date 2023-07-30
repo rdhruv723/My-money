@@ -8,12 +8,14 @@
     "npm" : "8.11.0"
   },
   "scripts": {
-    "client-install" : "npm install --prefix client",
-    "server" : "nodemon server.js",
-    "client" : "npm start --prefix client",
-    "dev" : "concurrently \"npm run server\" \"npm run  client\"",
     "start": "node server.js",
-    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "server": "nodemon server.js",
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
