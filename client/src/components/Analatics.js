@@ -43,7 +43,7 @@ function Analatics({transactions}) {
 
             <div className="col-md-4 mt-3">
                 <div className="transaction-count">
-                    <h4>Total Transactions : {totalTurnover}</h4>
+                    <h4>Total Turnover : {totalTurnover}</h4>
                     <hr />
                     <h5>Income : {totalIncomeTurnover} </h5>
                     <h5>Expense : {totalExpenseTurnover} </h5>
