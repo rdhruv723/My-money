@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://rdhruv72:rdhruv72@cluster0.aaenjc0.mongodb.net/my-money',
+mongoose.connect('mongodb+srv://Dhruv:Rajan%4072@cluster0.5jroi.mongodb.net/my-moneys',
 { useNewUrlParser: true , useUnifiedTopology: true })
 
 .then(()=>{ return console.log("Connected to MongoDB Localhost...");
